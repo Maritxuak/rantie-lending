@@ -1,0 +1,518 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Articulat CF", sans-serif;
+    }
+
+    p,
+    span {
+        cursor: default;
+    }
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-DemiBoldOblique.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Demi Bold Oblique';
+    src: url('/fonts/ArticulatCF-DemiBoldOblique.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Demi';
+    src: url('/fonts/ArticulatCF-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-BoldOblique.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Extra';
+    src: url('/fonts/ArticulatCF-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-MediumOblique.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Bold Oblique';
+    src: url('/fonts/ArticulatCF-BoldOblique.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Light Oblique';
+    src: url('/fonts/ArticulatCF-LightOblique.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-DemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Extra Bold Oblique';
+    src: url('/fonts/ArticulatCF-ExtraBoldOblique.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-ExtraBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Medium Oblique';
+    src: url('/fonts/ArticulatCF-MediumOblique.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-ExtraBoldOblique.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-HeavyOblique.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-LightOblique.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Heavy Oblique';
+    src: url('/fonts/ArticulatCF-HeavyOblique.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Extra';
+    src: url('/fonts/ArticulatCF-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF Normal';
+    src: url('/fonts/ArticulatCF-Normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Articulat CF';
+    src: url('/fonts/ArticulatCF-NormalOblique.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@layer components {
+
+   /*Header*/
+   .header {
+    @apply bg-[#2B2A28] py-[31px] fixed top-0 right-0 left-0 z-10 md:py-3;
+}
+
+.header-container {
+    @apply flex justify-between items-center max-w-[1312px] mx-auto md:max-w-[100%] md:px-4; 
+}
+
+.header-menu-list {
+    @apply flex justify-between items-center gap-x-5 text-center max-w-[800px] md:hidden;
+}
+
+.header-buttons {
+    @apply flex gap-x-6 md:gap-x-3;
+}
+
+.header-button-enter {
+    @apply py-[8px] px-[40px] bg-[#F1F2EE] rounded-3xl text-[#2B2A28] text-base font-[500];
+}
+
+.header-button-registration {
+    @apply py-[8px] px-[40px] rounded-3xl text-[#2B2A28] text-base bg-[#6AC965] font-[500] md:px-6 md:py-0 md:text-[10px];
+}
+
+/*Header*/
+
+/*Rantie-promo-section(1)*/
+.rantie-promo {
+    @apply relative z-0 bg-cover h-[958px] md:h-[269px] md:mt-0;
+}
+
+.rantie-container {
+    @apply flex flex-col justify-center items-center w-[1200px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute z-10 text-center mx-auto max-w-[1337px] md:pb-[37px] md:pt-[36px];
+}
+
+.rantie-title {
+    @apply text-4xl text-[#F1F2EE] font-medium pt-4 md:text-xs md:pt-1;
+}
+
+.rantie-paragraph {
+    @apply text-3xl text-[#F2F2FB] max-w-[1200px] md:text-[10px] md:mt-2 md:w-[290px] md:leading-[normal];
+}
+
+.rantie-button {
+    @apply flex items-center gap-x-6 mt-8 py-4 px-12 rounded-full text-[#2B2A28] text-xl bg-[#6AC965] font-medium md:py-0 md:px-[18px] md:text-[8px] md:gap-x-2 md:mt-3;
+}
+
+/*Rantie-promo-section(1)*/
+
+/*City-section(2)*/
+.city-container {
+    @apply text-center mx-auto max-w-[1300px] mt-[130px] md:mt-10 md:px-6 ;
+}
+
+.city-image {
+    @apply flex justify-between items-center gap-x-[60px] max-w-[1310px] mx-auto md:flex-col-reverse;
+}
+
+/* City-section(2) */
+
+/* Financially-Healthy */
+
+    .financially-healthy-container {
+        @apply max-w-[1312px] mx-auto md:max-w-[100%] md:w-[100%];
+    }
+
+    .financially-healthy-title {
+        @apply text-center text-[#3C5277] text-[64px] font-semibold md:text-xl md:mx-6;
+    }
+
+    .financially-healthy-p {
+        @apply text-2xl text-[#3C5277] font-normal md:text-sm;
+    }
+
+/* Financially-Healthy */
+
+
+/* Health-Lifestyle-section(6) */
+.health-lifestyle {
+    @apply max-w-[1310px] mx-auto mt-[130px] md:mt-10;
+}
+
+.health-lifestyle-title {
+    @apply text-5xl text-center mb-[72px] text-[#3C5277] font-semibold md:mb-4;
+}
+
+.health-lifestyle-grid {
+    @apply grid grid-cols-2 gap-x-[60px] gap-y-[60px] md:grid-cols-1 md:mx-4 md:gap-y-4;
+}
+
+.health-lifestyle-grid-column {
+    @apply bg-[#F9FAFF] duration-200 rounded-3xl px-14 drop-shadow-xl hover:border-[#6AC965] border-transparent border-[4px] hover:scale-110 pt-6 pb-14 md:px-5 md:pb-4 md:pt-2;
+}
+
+.health-lifestyle-grid-title {
+    @apply inline-block pb-[5px] text-2xl text-[#3C5277] font-semibold md:text-base
+}
+
+.health-lifestyle-grid-border {
+    @apply border-[1px] border-[#6AC965] w-[15%] mb-[11px];
+}
+
+.health-lifestyle-grid-p {
+    @apply text-base text-[#3C5277] md:text-sm;
+}
+
+/* Health-Lifestyle-section(6) */
+
+/* Finance-culture-section(7) */
+
+.finance-culture {
+    @apply text-5xl text-center mb-[72px] text-[#3C5277] font-semibold md:mb-3;
+}
+
+.finance-culture-container {
+    @apply mt-8 bg-[#F9FAFF] max-w-[1312px] rounded-3xl drop-shadow-xl flex items-center gap-x-28 py-8 mx-auto px-14 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200 md:flex-col md:py-0 md:mt-3 md:hover:scale-110 md:mx-6 md:px-0;
+}
+
+.finance-culture-container-p {
+    @apply text-[26px] text-[#3C5277] font-normal  md:text-sm md:px-4 md:pt-3 md:pb-6;
+}
+
+/* Finance-culture-section(7) */
+    /* People-finance-section(8) */
+    .people-finance {
+        @apply max-w-[1312px] mx-auto mt-[83px] md:mt-10 md:px-4;
+    }
+
+    .people-finance-title {
+        @apply text-[#3C5277] text-[64px] text-center font-[600] md:text-[24px];
+    }
+
+    .people-finance-container {
+        @apply flex items-center gap-x-[33px] md:flex-wrap md:justify-center;
+    }
+
+    .people-finance-container-text {
+        @apply max-w-[636px] pt-[38px] space-y-[40px] leading-[43.52px] text-[32px] md:text-[14px] md:leading-5 md:pt-[16px] md:max-w-full md:px-[25px];
+    }
+
+    .people-finance-paragraph {
+        @apply text-[#3C5277] md:mt-[12px] !important;
+    }
+
+    /* People-finance-section(8) */
+
+    /* Development-section(9) */
+    .development-container {
+        @apply max-w-[1310px] h-[629px] mx-auto border-[1px] rounded-[20px] shadow-lg md:max-w-[100%] md:h-[288px] md:mx-4;
+    }
+
+    .development-container-items {
+        @apply max-w-[1200px] mx-auto mt-[72px] mb-[96px] md:mt-[20px];
+    }
+
+    .development-graph {
+        @apply relative mt-[72px] md:mt-[21px];
+    }
+
+    .development-graph-container-circle {
+        @apply mb-[28px] max-w-[1065px] mx-auto flex justify-between items-center md:mb-[12px] md:mx-[15px];
+    }
+
+    .development-graph-circle {
+        @apply w-[86px] h-[86px] rounded-[50%] bg-[#F1F4F9] shadow-2xl relative cursor-pointer md:w-[48px] md:h-[48px];
+    }
+
+    .development-graph-image {
+        @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+    }
+
+    .development-graph-container-small-circle {
+        @apply max-w-[965px] border-[3px] border-[#A2A7B8] mb-[32px] mx-auto relative md:max-w-[100%] md:border-[1px] md:mb-[12px] md:mx-[35px];
+    }
+
+    .development-graph-small-circle {
+        @apply w-[16px] h-[16px] absolute top-[-8px] rounded-[50%] md:w-1 md:h-1 md:top-[-1.5px];
+    }
+
+    .development-graph-container-text {
+        @apply flex items-center justify-between text-center md:mx-[12px] md:mt-[12px] md:items-start;
+    }
+
+    .development-graph-text {
+        @apply text-2xl text-center cursor-pointer text-[#3C5277] md:text-[8px] md:leading-[10px];
+    }
+
+    .test {
+        width: 100%;
+        margin-inline: 50px;
+    }
+
+    /* Development-section(9) */
+
+    /* Parthners-section(10) */
+
+    .parthners-container {
+        @apply max-w-[1310px] mx-auto mt-[83px] pb-[130px] md:mt-[40px];
+    }
+
+    .parthners-title {
+        @apply text-[#3C5277] text-5xl text-center mb-[72px] font-medium md:text-[20px] md:mb-[16px];
+    }
+
+    .parthners-grid {
+        @apply grid grid-cols-3 gap-x-[60px] md:grid-cols-1 md:gap-y-[16px] md:my-[16px];
+    }
+
+    .parthners-grid-column {
+        @apply bg-[#F9FAFF] rounded-3xl drop-shadow-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200 md:max-w-[100%] md:mx-[25px];
+    }
+
+    .parthners-flex-box {
+        @apply flex flex-col items-center mx-[50px] md:mb-[24px];
+    }
+
+    /* Parthners-section(10) */
+
+    /* Footer */
+    .footer-container {
+        @apply flex max-w-[1310px] mx-auto pt-[96px] text-white md:pt-[64px] md:flex-wrap md:items-center md:justify-center;
+    }
+
+    .footer-container-items {
+        @apply flex gap-x-[106px] w-[1280px] mb-[162px] ml-[99px] md:ml-0 md:flex-wrap md:items-center md:justify-center;
+    }
+
+    .footer-container-contact {
+        @apply md:mb-[40px] md:flex md:flex-col md:items-center md:mx-[16px] md:w-[100%];
+    }
+
+    .footer-container-project {
+        @apply text-[24px] flex flex-col gap-y-[16px] md:mb-[40px] md:flex md:items-center md:w-[100%];
+    }
+
+    .footer-card-pay {
+        @apply md:w-[100%] md:flex md:flex-col md:items-center
+    }
+
+    /* Footer */
+
+    .text {
+        transition: opacity .45s ease-in;
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+        top: 2px;
+        height: 0;
+      }
+      .green {
+        color: green;
+      }
+      .active {
+        opacity: 1;
+        height: 100%;
+      }
+}
